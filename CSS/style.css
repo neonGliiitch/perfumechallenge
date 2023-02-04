@@ -6,10 +6,11 @@
 body {
   background-color: hsl(30, 38%, 92%);
   font-size: 14px;
-  min-height: 100vh;
-  /* display: flex; */
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 p {
@@ -18,12 +19,11 @@ p {
 
 .main {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   background-color: hsl(0, 0%, 100%);  
   width: 600px;
   border-radius: 10px;
-  margin: 20vh auto;
+  box-shadow: 0px 0px 10px 7px rgba(0,0,0,0.05);
 }
 
 .perfumeimg {
@@ -108,10 +108,18 @@ p {
   width: auto;
 }
 
-.attribution {
-  /* position: absolute; */
-  bottom: 30px;
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
   margin: 10px;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+.attribution a:hover {
+  color: rgb(127, 172, 255);
 }
 
 @media screen and (max-width: 682px) {
@@ -139,9 +147,4 @@ p {
   .cart {
     margin-top: 40px;
   }
-  
-  .attribution {
-    /* position: relative; */
-  }
-
 }
